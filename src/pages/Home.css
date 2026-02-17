@@ -1,0 +1,47 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/* ===== PAGINATION CONTAINER ===== */
+.pagination {
+  margin: 30px 0;
+
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== BUTTON ===== */
+.pagination button {
+  min-width: 36px;
+  height: 36px;
+  padding: 6px 10px;
+
+  border-radius: 6px;
+  border: none;
+
+  background: #232f3e;   /* fixed background */
+  color: white;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+/* hover */
+.pagination button:hover {
+  background: #37475a;
+  transform: translateY(-2px);
+}
+
+/* active page */
+.pagination button.active {
+  background: #febd69;
+  color: black;
+}
